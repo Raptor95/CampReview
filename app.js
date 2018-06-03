@@ -48,7 +48,7 @@ app.use(commentRoutes);
 mongoose.connect(process.env.DATABASEURL || "mongodb://localhost/camp_review");
 
 
-app.listen(3000, function()
+app.listen(process.env.PORT || 3000, function()
 {
 	console.log("CampReview Server is running on Port 3000");
 });
